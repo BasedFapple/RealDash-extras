@@ -11,10 +11,10 @@
 
     <frame id="0x01F0A001" endianess="big">
       <value name="AEM: MAP" units="PSI" offset="0" length="2" conversion="V*0.014504-14.6960"></value> <!-- MAP -->
-      <value name="AEM: O2 Target" offset="2" length="2" conversion="V*0.00390625+0.5"></value> <!-- lambda target  -->
-      <value name="AEM: WG Output" units="%" offset="4" length="1" conversion="V*0.392157"></value> <!-- WG Output  -->
-      <value name="AEM: Vtec (HS1)" offset="5" length="1" units="bit" conversion="V>>0"></value> <!-- Vtec -->
-      <value name="AEM: Engine Protect (All)" offset="6" length="1" units="bit" conversion="V>>0"></value> <!-- Engine Protect -->
+      <value name="AEM: O2 Target" offset="2" length="1" conversion="V*0.00390625+0.5"></value> <!-- lambda target  -->
+      <value name="AEM: WG Output" units="%" offset="3" length="1" conversion="V*0.392157"></value> <!-- WG Output  -->
+      <value name="AEM: Vtec (HS1)" offset="4" length="1" units="bit" conversion="V>>0"></value> <!-- Vtec -->
+      <value name="AEM: Engine Protect (All)" offset="5" length="1" units="bit" conversion="V>>0"></value> <!-- Engine Protect -->
     </frame>
 
     <frame id="0x01F0A002" endianess="big">
