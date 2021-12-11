@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RealDashCAN version="2">
+  <frames>
+    <frame id="0x01F0A000" endianess="big">
+      <value name="AEM: RPM" offset="0" length="2" conversion="V*0.39063"></value> <!-- RPM -->
+      <value name="AEM: Engine Load" units="%" offset="2" length="2" conversion="V*0.0015259"></value> <!-- engine load -->
+      <value name="AEM: TPS" units="%" offset="4" length="2" conversion="V*0.0015259"></value> <!-- TPS  -->
+      <value name="AEM: IAT" units="C" offset="6" length="1" signed="true"></value> <!-- IAT -->
+      <value name="AEM: Coolant Temp" units="C" offset="7" length="1" signed="true"></value> <!-- CLT -->
+    </frame>
+
+    <frame id="0x01F0A001" endianess="big">
+      <value name="AEM: MAP" units="PSI" offset="0" length="2" conversion="V*0.014504-14.6960"></value> <!-- MAP -->
+      <value name="AEM: O2 Target" offset="2" length="2" conversion="V*0.00390625+0.5"></value> <!-- lambda target  -->
+      <value name="AEM: WG Output" units="%" offset="4" length="1" conversion="V*0.392157"></value> <!-- WG Output  -->
+      <value name="AEM: Vtec (HS1)" offset="5" length="1" units="bit" conversion="V>>0"></value> <!-- Vtec -->
+      <value name="AEM: Engine Protect (All)" offset="6" length="1" units="bit" conversion="V>>0"></value> <!-- Engine Protect -->
+    </frame>
+
+    <frame id="0x01F0A002" endianess="big">
+      <value name="AEM: ADCR18" offset="0" length="2" conversion="V*0.00007782"></value>
+      <value name="AEM: ADCR15" offset="2" length="2" conversion="V*0.00007782"></value>
+      <value name="AEM: ADCR16" offset="4" length="2" conversion="V*0.00007782"></value>
+      <value name="AEM: ADCR08" offset="6" length="2" conversion="V*0.000326"></value>
+    </frame>
+
+    <frame id="0x01F0A003" endianess="big">
+      <value name="AEM: O2 #1" offset="0" length="1" conversion="V*0.00390625+0.5"></value> <!-- lambda 1-->
+      <value name="AEM: O2 #2" offset="1" length="1" conversion="V*0.00390625+0.5"></value> <!-- lambda 2-->
+      <value name="AEM: VSS" offset="2" length="2" conversion="V*0.0062865"></value> <!-- VSS1 -->
+      <value name="AEM: Gear Cal" offset="4" length="1"></value> <!-- Gear -->
+      <value name="AEM: Ignition Timing" offset="5" length="1" conversion="V*0.35156"></value> <!-- Ignition Timing -->
+      <value name="AEM: Batt Vol" offset="6" length="2" conversion="V*0.0002455"></value> <!-- battery voltage -->
+    </frame>
+
+  </frames>
+</RealDashCAN>
+
